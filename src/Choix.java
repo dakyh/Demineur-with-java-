@@ -8,7 +8,7 @@ public class Choix extends JFrame {
     public Choix(Demineur minesweeper) {
         this.iMinesweeper = minesweeper;
         this.setSize(400, 130);
-        this.setTitle("Remplir l'espace vide");
+        this.setTitle("Remplir l'espace vide par quelques chose");
         setLocationRelativeTo(null);
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
