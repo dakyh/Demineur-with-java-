@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     tools {
-        sonarQubeScanner 'sonar-scanner' // Doit correspondre au nom défini dans Jenkins
+        sonarQubeScanner 'sonar-scanner' // ← doit être le nom que tu as mis dans Jenkins
     }
 
     stages {
         stage('Analyse SonarQube') {
             steps {
-                withSonarQubeEnv('local-sonarqube') { // Doit correspondre au nom défini dans Jenkins
-                    bat 'sonar-scanner'
+                withSonarQubeEnv('local-sonarqube') { // ← doit être le nom défini dans Jenkins > Configure System
+                    bat 'sonar-scanner.bat'
                 }
             }
         }
