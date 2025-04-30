@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         SONAR_HOST_URL = 'http://localhost:9000'
-        SONAR_TOKEN = credentials('sqp_295dbfa079040a21227285f4d96b45ac48921bc9')
+        SONAR_TOKEN = 'sqp_295dbfa079040a21227285f4d96b45ac48921bc9'
     }
 
     stages {
