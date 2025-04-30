@@ -9,7 +9,7 @@ pipeline {
         stage('Analyse SonarQube') {
             steps {
                 withSonarQubeEnv('local-sonarqube') { // Doit correspondre au nom défini dans Jenkins
-                    sh 'sonar-scanner'
+                    bat 'sonar-scanner'
                 }
             }
         }
